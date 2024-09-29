@@ -1,11 +1,14 @@
-//Tel de cijfers in een getal: Vraag een getal aan de gebruiker en gebruik een for-loop om het aantal cijfers in dat getal te tellen.
+// bereken de som van de cijfers in een getal
 
-let number=parseInt(prompt("voer een getal in:"));
-let count=0;
+// 1234  1+2+3+4=10
 
-for (let i=number ; i>0 ; i= ( i-(i%10) ) /10 ){
-      count++;
+//cijfers vinden:  i = (i % 10) / 10
+
+let getal=parseInt(prompt("geef een getal in:"));
+let som=0;
+
+for (let i=getal; i>0 ; i= ( i- (i % 10) ) /10  ){
+      som+=i%10;
+
 }
-console.log(count);
-
-//!!!!!!
+console.log(som);
