@@ -3,13 +3,16 @@
 
 
 
-//werkt nog  niet!!!
 
 
 
-let macht=1;
+let macht=2;
 
-for (let i=0 ; i<=1000 ; i++ ){
-    macht=i**2;
+for (let i=1 ; i<=1000 ; i++ ){
+    macht*=2;
+
+    if (macht>1000){
+        break;
+    }
     console.log(macht);
 }
